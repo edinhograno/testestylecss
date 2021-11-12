@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: #414141;
+  width: 29.7cm;
+  height: 21cm;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card {
+  width: 48%;
+  height: 98%;
+  background-color: white;
+}
+.card-header {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-body {
+  height: 80%;
+  width: 100%;
+  background-color: #ef7d12;
+  display: flex;
+  flex-direction: column;
+}
+.card-body .text {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  /* background-color: red; */
+  padding: 1rem 4rem;
+}
+.all-steps-header {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  height: 7rem;
+}
+.step {
+  background-color: #fff;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.step::after {
+  position: absolute;
+  content: "";
+  height: 2rem;
+  width: 0.5rem;
+  background-color: #fff;
+  bottom: -2rem;
+}
+.step h2 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.all-steps-body {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+}
+.step-body {
+  min-height: 15rem;
+  width: 30%;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.code {
+  width: 60%;
+  height: 4rem;
+  background-color: #fff;
+  align-self: center;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+}
+@page {
+  size: auto; /* auto is the initial value */
+
+  /* this affects the margin in the printer settings */
+  margin: 25mm 25mm 25mm 25mm;
+}
